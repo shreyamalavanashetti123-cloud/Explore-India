@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Explore India | Premium Travel & Tour Guide Website</title>
+  <meta name="description" content="Discover the magic of India with Explore India. Plan your trips to Mysore, Coorg, Hampi, Goa, Kerala, and Manali. Book premium tour packages and luxury hotel stays.">
+  <meta name="keywords" content="India travel guide, explore india, booking tour packages, kerala backwaters, hampi ruins, goa beaches, coorg hills, mysore palace, manali snow hills">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" role="status" aria-label="Loading Website">
+    <div class="preloader-logo">Explore <span>India</span></div>
+    <div class="spinner-mandala"></div>
+  </div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" id="nav-logo">
+        Explore <span>India</span>
+      </a>
+      
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#hotels" class="nav-link">Hotels</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="mobile-cta-only">
+          <a href="#booking" class="nav-cta"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+        </li>
+      </ul>
+
+      <!-- Nav CTA Button -->
+      <a href="#booking" class="nav-cta hide-on-mobile"><i class="fa-solid fa-calendar-check"></i> Book Now</a>
+
+      <!-- Responsive Mobile Toggle -->
+      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-container">
+      <img src="assets/hero_bg.png" alt="Majestic Indian Tourism Banner" class="hero-bg">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Incredible India Awaits</p>
+      <h1 class="hero-title">Experience the Soul of <span>India</span></h1>
+      <p class="hero-desc">Embark on a journey to discover ancient empires, golden beaches, misty mountains, and serene backwaters. Plan your perfect getaway today.</p>
+      
+      <!-- Destination Search Form -->
+      <div class="search-wrapper">
+        <div class="search-input-group">
+          <i class="fa-solid fa-location-dot search-icon"></i>
+          <input type="text" id="dest-search" placeholder="Where do you want to go? (e.g., Goa, Kerala...)" aria-label="Search destinations">
+        </div>
+        <button class="search-btn" id="search-btn" aria-label="Perform search">
+          <span>Search</span> <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Floating scroll down indicator -->
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="mouse-scroll"></div>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Featured Destinations</span>
+        <h2 class="section-title">Popular Tourist Places</h2>
+        <p class="section-desc">Unveil the timeless beauty of India's most celebrated spots. From historic monuments to scenic hill stations, explore the diverse landscapes.</p>
+      </div>
+      
+      <!-- Destinations Cards Grid -->
+      <div class="destinations-grid">
+        
+        <!-- Mysore Card -->
+        <div class="dest-card reveal" data-name="mysore">
+          <div class="dest-img-container">
+            <img src="assets/mysore.png" alt="Illuminated Mysore Palace at night" class="dest-img">
+            <span class="dest-tag"><i class="fa-solid fa-monument"></i> Heritage</span>
+          </div>
+          <div class="dest-info">
+            <div class="dest-header">
+              <h3 class="dest-title">Mysore Palace</h3>
+              <div class="dest-rating">
+                <i class="fa-solid fa-star"></i> 4.8 <span>(1.2k)</span>
+              </div>
+            </div>
+            <p class="dest-desc">Known for its glittering royal heritage and magnificent monuments, Mysore (Mysuru) is Karnataka's cultural capital. The city features majestic palaces, historic temples, and sprawling spice-scented gardens.</p>
+            <div class="dest-footer">
+              <div class="dest-cost">
+                <span>Start From</span>
+                <p class="dest-price">₹4,999</p>
+              </div>
+              <button class="dest-btn view-details-btn" data-destination="mysore">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coorg Card -->
+        <div class="dest-card reveal" data-name="coorg">
+          <div class="dest-img-container">
+            <img src="assets/coorg.png" alt="Lush green coffee plantations of Coorg" class="dest-img">
+            <span class="dest-tag"><i class="fa-solid fa-leaf"></i> Nature</span>
+          </div>
+          <div class="dest-info">
+            <div class="dest-header">
+              <h3 class="dest-title">Coorg Hills</h3>
+              <div class="dest-rating">
+                <i class="fa-solid fa-star"></i> 4.7 <span>(950)</span>
+              </div>
+            </div>
+            <p class="dest-desc">Nestled amidst the Western Ghats, Coorg (Kodagu) is a lush tropical paradise of coffee plantations, misty hills, and gushing waterfalls. Perfect for nature lovers and adventure enthusiasts.</p>
+            <div class="dest-footer">
+              <div class="dest-cost">
+                <span>Start From</span>
+                <p class="dest-price">₹6,499</p>
+              </div>
+              <button class="dest-btn view-details-btn" data-destination="coorg">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hampi Card -->
+        <div class="dest-card reveal" data-name="hampi">
+          <div class="dest-img-container">
+            <img src="assets/hampi.png" alt="Ancient Stone Chariot at Vittala Temple in Hampi" class="dest-img">
+            <span class="dest-tag"><i class="fa-solid fa-landmark"></i> Ancient ruins</span>
+          </div>
+          <div class="dest-info">
+            <div class="dest-header">
+              <h3 class="dest-title">Hampi Ruins</h3>
+              <div class="dest-rating">
+                <i class="fa-solid fa-star"></i> 4.9 <span>(870)</span>
+              </div>
+            </div>
+            <p class="dest-desc">A UNESCO World Heritage Site, Hampi is an open-air museum of ancient stone temples, royal pavilions, and rugged bouldered landscapes representing the glorious Vijayanagara Empire.</p>
+            <div class="dest-footer">
+              <div class="dest-cost">
+                <span>Start From</span>
+                <p class="dest-price">₹5,499</p>
+              </div>
+              <button class="dest-btn view-details-btn" data-destination="hampi">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goa Card -->
+        <div class="dest-card reveal" data-name="goa">
+          <div class="dest-img-container">
+            <img src="assets/goa.png" alt="Scenic beach sunset in Goa with palm trees" class="dest-img">
+            <span class="dest-tag"><i class="fa-solid fa-umbrella-beach"></i> Beach</span>
+          </div>
+          <div class="dest-info">
+            <div class="dest-header">
+              <h3 class="dest-title">Goa Beaches</h3>
+              <div class="dest-rating">
+                <i class="fa-solid fa-star"></i> 4.7 <span>(2.5k)</span>
+              </div>
+            </div>
+            <p class="dest-desc">India's pocket-sized paradise, Goa is famous for its sun-kissed golden beaches, colonial architecture, vibrant nightlife, water sports, and delicious Konkani seafood.</p>
+            <div class="dest-footer">
+              <div class="dest-cost">
+                <span>Start From</span>
+                <p class="dest-price">₹7,999</p>
+              </div>
+              <button class="dest-btn view-details-btn" data-destination="goa">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kerala Card -->
+        <div class="dest-card reveal" data-name="kerala">
+          <div class="dest-img-container">
+            <img src="assets/kerala.png" alt="Traditional houseboat on Kerala backwaters" class="dest-img">
+            <span class="dest-tag"><i class="fa-solid fa-water"></i> Backwaters</span>
+          </div>
+          <div class="dest-info">
+            <div class="dest-header">
+              <h3 class="dest-title">Kerala Backwaters</h3>
+              <div class="dest-rating">
+                <i class="fa-solid fa-star"></i> 4.9 <span>(1.8k)</span>
+              </div>
+            </div>
+            <p class="dest-desc">Known as "God's Own Country", Kerala is a serene tropical haven of quiet backwaters, traditional houseboats, wild spice hills, and Ayurvedic wellness traditions.</p>
+            <div class="dest-footer">
+              <div class="dest-cost">
+                <span>Start From</span>
+                <p class="dest-price">₹8,999</p>
+              </div>
+              <button class="dest-btn view-details-btn" data-destination="kerala">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manali Card -->
+        <div class="dest-card reveal" data-name="manali">
+          <div class="dest-img-container">
+            <!-- Falling back to high-quality unsplash image since generator quota is hit -->
+            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" alt="Snowy mountains and valley in Manali" class="dest-img">
+            <span class="dest-tag"><i class="fa-solid fa-snowflake"></i> Mountains</span>
+          </div>
+          <div class="dest-info">
+            <div class="dest-header">
+              <h3 class="dest-title">Manali Valley</h3>
+              <div class="dest-rating">
+                <i class="fa-solid fa-star"></i> 4.8 <span>(1.4k)</span>
+              </div>
+            </div>
+            <p class="dest-desc">A high-altitude Himalayan resort town, Manali is a spectacular getaway for snow-clad valleys, skiing, paragliding, trekking, and the scenic Solang and Rohtang Passes.</p>
+            <div class="dest-footer">
+              <div class="dest-cost">
+                <span>Start From</span>
+                <p class="dest-price">₹9,499</p>
+              </div>
+              <button class="dest-btn view-details-btn" data-destination="manali">View Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- No Results Banner -->
+      <div id="no-results" class="no-results reveal">
+        <i class="fa-regular fa-face-frown" style="font-size: 3rem; color: var(--secondary); margin-bottom: 16px; display: block;"></i>
+        <h4>No Destinations Found</h4>
+        <p>Try searching for other locations like "Goa", "Hampi", or "Coorg".</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals for Destinations details -->
+  <div class="modal" id="details-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-close-btn" id="modal-close"><i class="fa-solid fa-xmark"></i></div>
+      <img src="assets/mysore.png" alt="Detailed Destination Image" class="modal-header-img" id="modal-img">
+      <div class="modal-body">
+        <div class="modal-title-group">
+          <h3 class="modal-title" id="modal-title">Mysore Palace</h3>
+          <div class="dest-rating" id="modal-rating">
+            <i class="fa-solid fa-star"></i> 4.8 <span>(1.2k reviews)</span>
+          </div>
+        </div>
+        
+        <!-- Stats Grid -->
+        <div class="modal-meta-grid">
+          <div class="meta-item">
+            <div class="meta-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="meta-text">
+              <span>Duration</span>
+              <p id="modal-duration">3 Days / 2 Nights</p>
+            </div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-icon"><i class="fa-solid fa-plane"></i></div>
+            <div class="meta-text">
+              <span>Best Time</span>
+              <p id="modal-time">Oct - Mar</p>
+            </div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+            <div class="meta-text">
+              <span>Activity</span>
+              <p id="modal-activity">Easy Sightseeing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-description">
+          <p id="modal-desc">Detailed descriptions of the destination go here.</p>
+        </div>
+
+        <div class="modal-highlights">
+          <h4>Trip Highlights</h4>
+          <ul class="highlights-list" id="modal-highlights">
+            <li><i class="fa-solid fa-check"></i> Traditional royal welcoming</li>
+            <li><i class="fa-solid fa-check"></i> Guided historical walk</li>
+            <li><i class="fa-solid fa-check"></i> Luxury heritage hotel stays</li>
+            <li><i class="fa-solid fa-check"></i> Entrance fees included</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-price">
+          <span>Total Cost Per Guest</span>
+          <p id="modal-price">₹4,999</p>
+        </div>
+        <button class="modal-book-btn" id="modal-book-now">Secure Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages Section -->
+  <section id="packages" class="section" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Exclusive Offers</span>
+        <h2 class="section-title">Special Tour Packages</h2>
+        <p class="section-desc">Choose from our meticulously crafted holiday packages loaded with premium comforts, guided tours, and curated luxury stays.</p>
+      </div>
+
+      <!-- Packages Cards Grid -->
+      <div class="packages-grid">
+        
+        <!-- Package 1 -->
+        <div class="pkg-card reveal">
+          <div class="pkg-img-wrapper">
+            <img src="assets/hampi.png" alt="Historic Golden Triangle Tour">
+            <span class="pkg-badge">Best Seller</span>
+            <span class="pkg-duration">5 Days / 4 Nights</span>
+          </div>
+          <div class="pkg-content">
+            <h3 class="pkg-title">Golden Heritage Tour</h3>
+            <div class="pkg-inclusions">
+              <span><i class="fa-solid fa-hotel"></i> 4★ Stay</span>
+              <span><i class="fa-solid fa-car"></i> Cab</span>
+              <span><i class="fa-solid fa-utensils"></i> Meals</span>
+              <span><i class="fa-solid fa-person-military-pointing"></i> Guide</span>
+            </div>
+            <p class="pkg-desc">Explore the historical heritage sites in Mysore and Hampi with professional historians, stay in boutique hotels, and experience fine regional cuisines.</p>
+            <div class="pkg-footer">
+              <div class="pkg-price-group">
+                <span>Price per guest</span>
+                <p class="pkg-price">₹14,999 <span class="pkg-price-cents">/ person</span></p>
+              </div>
+              <button class="pkg-btn book-pkg-trigger" data-dest="mysore" data-pkg-name="Golden Heritage Tour">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="pkg-card reveal">
+          <div class="pkg-img-wrapper">
+            <img src="assets/coorg.png" alt="Southern Hills Serenade">
+            <span class="pkg-badge" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-light) 100%);">Nature Special</span>
+            <span class="pkg-duration">6 Days / 5 Nights</span>
+          </div>
+          <div class="pkg-content">
+            <h3 class="pkg-title">Southern Hills Serenade</h3>
+            <div class="pkg-inclusions">
+              <span><i class="fa-solid fa-hotel"></i> Resort</span>
+              <span><i class="fa-solid fa-car"></i> SUV</span>
+              <span><i class="fa-solid fa-utensils"></i> Breakfast</span>
+              <span><i class="fa-solid fa-campground"></i> Trekking</span>
+            </div>
+            <p class="pkg-desc">Unwind among coffee estates in Coorg and backwater resorts in Kerala. Includes jungle safaris, aromatic spice tours, and waterfall treks.</p>
+            <div class="pkg-footer">
+              <div class="pkg-price-group">
+                <span>Price per guest</span>
+                <p class="pkg-price">₹18,499 <span class="pkg-price-cents">/ person</span></p>
+              </div>
+              <button class="pkg-btn book-pkg-trigger" data-dest="coorg" data-pkg-name="Southern Hills Serenade">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="pkg-card reveal">
+          <div class="pkg-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" alt="Himalayan Adventure Tour">
+            <span class="pkg-badge" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">Adventure</span>
+            <span class="pkg-duration">7 Days / 6 Nights</span>
+          </div>
+          <div class="pkg-content">
+            <h3 class="pkg-title">Himalayan Escape</h3>
+            <div class="pkg-inclusions">
+              <span><i class="fa-solid fa-hotel"></i> Cottage</span>
+              <span><i class="fa-solid fa-car"></i> SUV</span>
+              <span><i class="fa-solid fa-utensils"></i> All Meals</span>
+              <span><i class="fa-solid fa-person-skiing"></i> Sports</span>
+            </div>
+            <p class="pkg-desc">Indulge in snow adventures and clean valley views in Manali. Includes river rafting, Solang paragliding, and cozy bonfire stays.</p>
+            <div class="pkg-footer">
+              <div class="pkg-price-group">
+                <span>Price per guest</span>
+                <p class="pkg-price">₹22,999 <span class="pkg-price-cents">/ person</span></p>
+              </div>
+              <button class="pkg-btn book-pkg-trigger" data-dest="manali" data-pkg-name="Himalayan Escape">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hotels Section -->
+  <section id="hotels" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Luxury Stays</span>
+        <h2 class="section-title">Recommended Hotels</h2>
+        <p class="section-desc">Experience royal Indian hospitality with our handpicked partner resorts, offering breathtaking views and premium facilities.</p>
+      </div>
+
+      <!-- Hotels Grid -->
+      <div class="hotels-grid">
+        
+        <!-- Hotel 1 -->
+        <div class="hotel-card reveal">
+          <div class="hotel-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Resort in Coorg">
+            <div class="hotel-rating-overlay">
+              <i class="fa-solid fa-star"></i> 4.8
+            </div>
+          </div>
+          <div class="hotel-content">
+            <span class="hotel-loc">Coorg</span>
+            <h3 class="hotel-name">Windflower Wellness Resort</h3>
+            <div class="hotel-features">
+              <span><i class="fa-solid fa-water-ladder"></i> Pool</span>
+              <span><i class="fa-solid fa-spa"></i> Spa</span>
+              <span><i class="fa-solid fa-wifi"></i> WiFi</span>
+            </div>
+            <div class="hotel-footer">
+              <div class="hotel-price">
+                <span>Per Night</span>
+                <p>₹8,500</p>
+              </div>
+              <a href="#booking" class="hotel-btn">Book Stay <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-card reveal">
+          <div class="hotel-img-wrapper">
+            <img src="assets/mysore.png" alt="Palace View Hotel Mysore">
+            <div class="hotel-rating-overlay">
+              <i class="fa-solid fa-star"></i> 4.7
+            </div>
+          </div>
+          <div class="hotel-content">
+            <span class="hotel-loc">Mysore</span>
+            <h3 class="hotel-name">Radisson Blu Plaza Hotel</h3>
+            <div class="hotel-features">
+              <span><i class="fa-solid fa-water-ladder"></i> Pool</span>
+              <span><i class="fa-solid fa-dumbbell"></i> Gym</span>
+              <span><i class="fa-solid fa-utensils"></i> Restaurant</span>
+            </div>
+            <div class="hotel-footer">
+              <div class="hotel-price">
+                <span>Per Night</span>
+                <p>₹6,500</p>
+              </div>
+              <a href="#booking" class="hotel-btn">Book Stay <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel-card reveal">
+          <div class="hotel-img-wrapper">
+            <img src="assets/goa.png" alt="Beachfront Villa Goa">
+            <div class="hotel-rating-overlay">
+              <i class="fa-solid fa-star"></i> 4.9
+            </div>
+          </div>
+          <div class="hotel-content">
+            <span class="hotel-loc">Goa</span>
+            <h3 class="hotel-name">The Leela Beach Resort</h3>
+            <div class="hotel-features">
+              <span><i class="fa-solid fa-umbrella-beach"></i> Beach</span>
+              <span><i class="fa-solid fa-water-ladder"></i> Pool</span>
+              <span><i class="fa-solid fa-wine-glass"></i> Bar</span>
+            </div>
+            <div class="hotel-footer">
+              <div class="hotel-price">
+                <span>Per Night</span>
+                <p>₹15,500</p>
+              </div>
+              <a href="#booking" class="hotel-btn">Book Stay <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div class="hotel-card reveal">
+          <div class="hotel-img-wrapper">
+            <img src="assets/kerala.png" alt="Lakeside resort Kerala">
+            <div class="hotel-rating-overlay">
+              <i class="fa-solid fa-star"></i> 4.9
+            </div>
+          </div>
+          <div class="hotel-content">
+            <span class="hotel-loc">Kerala</span>
+            <h3 class="hotel-name">Kumarakom Lake Resort</h3>
+            <div class="hotel-features">
+              <span><i class="fa-solid fa-water"></i> View</span>
+              <span><i class="fa-solid fa-water-ladder"></i> Pool</span>
+              <span><i class="fa-solid fa-spa"></i> Spa</span>
+            </div>
+            <div class="hotel-footer">
+              <div class="hotel-price">
+                <span>Per Night</span>
+                <p>₹12,000</p>
+              </div>
+              <a href="#booking" class="hotel-btn">Book Stay <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="gallery" class="section" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Visual Journey</span>
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-desc">Glimpse the breathtaking scenery, beautiful temples, and vibrant festivals captured across incredible locations.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="heritage">Heritage</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="beaches">Beaches</button>
+        <button class="filter-btn" data-filter="mountains">Mountains</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid reveal">
+        
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="heritage" data-src="assets/mysore.png" data-title="Mysore Palace" data-desc="The royal palace glowing in yellow lights during Dussehra.">
+          <img src="assets/mysore.png" alt="Mysore Palace">
+          <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          <div class="gallery-item-info">
+            <h4>Mysore Palace</h4>
+            <span>Heritage</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="nature" data-src="assets/coorg.png" data-title="Coorg Valleys" data-desc="Lush plantations covered in misty morning clouds.">
+          <img src="assets/coorg.png" alt="Coorg coffee plantation">
+          <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          <div class="gallery-item-info">
+            <h4>Coorg coffee plantation</h4>
+            <span>Nature</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="heritage" data-src="assets/hampi.png" data-title="Hampi Ruins" data-desc="Stone chariot architecture at Vittala Temple.">
+          <img src="assets/hampi.png" alt="Hampi Ruins">
+          <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          <div class="gallery-item-info">
+            <h4>Hampi Ruins</h4>
+            <span>Heritage</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="beaches" data-src="assets/goa.png" data-title="Goa Shorelines" data-desc="A tranquil palm-shadowed sunset at Vagator Beach.">
+          <img src="assets/goa.png" alt="Goa Sunset Beach">
+          <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          <div class="gallery-item-info">
+            <h4>Goa Sunset Beach</h4>
+            <span>Beaches</span>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="nature" data-src="assets/kerala.png" data-title="Kerala Houseboats" data-desc="Navigating quiet green backwaters under palm shades.">
+          <img src="assets/kerala.png" alt="Kerala backwater houseboat">
+          <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          <div class="gallery-item-info">
+            <h4>Kerala Backwaters</h4>
+            <span>Nature</span>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="mountains" data-src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" data-title="Solang Valley" data-desc="Snow peaks overlooking lush green meadows in Manali.">
+          <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" alt="Manali snow hills">
+          <div class="gallery-item-icon"><i class="fa-solid fa-expand"></i></div>
+          <div class="gallery-item-info">
+            <h4>Manali snow hills</h4>
+            <span>Mountains</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Lightbox Viewer -->
+  <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-close-btn" id="lightbox-close"><i class="fa-solid fa-xmark"></i></div>
+    <div class="lightbox-content">
+      <img src="" alt="View Enlarge Photo" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title">Title</h4>
+        <p id="lightbox-desc">Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Section -->
+  <section id="booking" class="section booking-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" style="color: var(--secondary-light);">Plan Your Trip</span>
+        <h2 class="section-title">Book Tour Packages</h2>
+        <p class="section-desc" style="color: #94a3b8;">Reserve your custom package in real-time. Fill out the details below and get your instant travel confirmation ticket.</p>
+      </div>
+
+      <!-- Booking Grid -->
+      <div class="booking-grid">
+        
+        <!-- Form Panel -->
+        <div class="booking-form-card reveal">
+          <form class="booking-form" id="booking-form" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="book-name">Your Full Name *</label>
+              <input type="text" id="book-name" class="input-control" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="book-email">Email Address *</label>
+              <input type="email" id="book-email" class="input-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="book-dest">Choose Destination *</label>
+              <select id="book-dest" class="input-control" required>
+                <option value="" disabled selected>Select destination</option>
+                <option value="mysore" data-price="4999">Mysore Palace (₹4,999)</option>
+                <option value="coorg" data-price="6499">Coorg Hills (₹6,499)</option>
+                <option value="hampi" data-price="5499">Hampi Ruins (₹5,499)</option>
+                <option value="goa" data-price="7999">Goa Beaches (₹7,999)</option>
+                <option value="kerala" data-price="8999">Kerala Backwaters (₹8,999)</option>
+                <option value="manali" data-price="9499">Manali Valley (₹9,499)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="book-guests">No. of Guests *</label>
+              <input type="number" id="book-guests" class="input-control" min="1" max="20" value="1" required>
+            </div>
+
+            <div class="form-group">
+              <label for="book-date">Travel Date *</label>
+              <input type="date" id="book-date" class="input-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="book-hotel">Preferred Stay *</label>
+              <select id="book-hotel" class="input-control">
+                <option value="standard" data-addon="0">Standard Hotel (Included)</option>
+                <option value="premium" data-addon="2500">Premium Resort (+₹2,500/guest)</option>
+                <option value="luxury" data-addon="5500">Luxury Heritage Hotel (+₹5,500/guest)</option>
+              </select>
+            </div>
+
+            <button type="submit" id="book-submit-btn">Confirm Tour Booking</button>
+          </form>
+        </div>
+
+        <!-- Cost Breakdown Panel -->
+        <div class="booking-info-card reveal">
+          <h3>Booking Summary</h3>
+          <div class="calculator-preview">
+            <div class="calc-row">
+              <span>Destination Base</span>
+              <span id="summary-base">₹0</span>
+            </div>
+            <div class="calc-row">
+              <span>Hotel Upgrade Addon</span>
+              <span id="summary-addon">₹0</span>
+            </div>
+            <div class="calc-row">
+              <span>Guests Multiplier</span>
+              <span id="summary-guests">x 1</span>
+            </div>
+            <div class="calc-row total">
+              <span>Total Estimated Cost</span>
+              <span id="summary-total">₹0</span>
+            </div>
+          </div>
+
+          <h4 style="margin-bottom: 12px; font-size: 1rem;">Package Inclusions</h4>
+          <ul class="inclusions-checklist">
+            <li><i class="fa-solid fa-circle-check"></i> Standard Double Room Accommodations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Delicious breakfast buffets</li>
+            <li><i class="fa-solid fa-circle-check"></i> Private air-conditioned local transfers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Certified English-speaking guides</li>
+            <li><i class="fa-solid fa-circle-check"></i> Toll taxes, permit fees & entries</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Ticket Confirmation Modal -->
+  <div class="ticket-modal" id="ticket-modal" role="dialog" aria-modal="true">
+    <div class="ticket-card">
+      <div class="ticket-header">
+        <span class="ticket-badge">Confirmed</span>
+        <h4>Boarding Ticket</h4>
+        <p>Explore India Tour</p>
+      </div>
+      
+      <div class="ticket-body">
+        <div class="ticket-info-grid">
+          <div class="ticket-info-item">
+            <span>Passenger</span>
+            <p id="ticket-passenger">Shreya S</p>
+          </div>
+          <div class="ticket-info-item">
+            <span>Ticket No</span>
+            <p id="ticket-number">IND-7840192</p>
+          </div>
+          <div class="ticket-info-item">
+            <span>Destination</span>
+            <p id="ticket-destination">Kerala Backwaters</p>
+          </div>
+          <div class="ticket-info-item">
+            <span>Travel Date</span>
+            <p id="ticket-date">12-July-2026</p>
+          </div>
+          <div class="ticket-info-item">
+            <span>Total Guests</span>
+            <p id="ticket-guests">2 Guests</p>
+          </div>
+          <div class="ticket-info-item">
+            <span>Stay Tier</span>
+            <p id="ticket-stay">Premium Resort</p>
+          </div>
+        </div>
+
+        <div class="ticket-divider"></div>
+
+        <div class="ticket-price-block">
+          <span>Billing Confirmed</span>
+          <p id="ticket-price">₹22,998</p>
+        </div>
+      </div>
+
+      <div class="ticket-footer">
+        <div class="ticket-barcode"></div>
+        <button class="ticket-close-btn" id="ticket-close">Download & Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews / Testimonials Section -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Testimonials</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <p class="section-desc">Read reviews from thousands of global travelers who designed their holidays and experienced India with us.</p>
+      </div>
+
+      <!-- Reviews Carousel -->
+      <div class="reviews-container reveal">
+        <div class="reviews-wrapper">
+          <div class="reviews-track" id="reviews-track">
+            
+            <!-- Slide 1 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review-text">"Our family vacation to Coorg and Mysore was fantastic. The package included everything from cozy stays to professional historians in Hampi. The booking process was super smooth!"</p>
+                <div class="review-user">
+                  <!-- Using high-quality unsplash avatars since generator quota is hit -->
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson" class="review-avatar">
+                  <h5>Sarah Johnson</h5>
+                  <span>Travel Blogger (UK)</span>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review-text">"Kerala was a dream come true. Floating on the Kumarakom backwaters on a private houseboat and staying in luxury hotels felt extremely premium. Highly recommend Explore India!"</p>
+                <div class="review-user">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Rajesh Sharma" class="review-avatar">
+                  <h5>Rajesh Sharma</h5>
+                  <span>Corporate Manager (Mumbai)</span>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="review-text">"We booked a 7-day winter escape package to Manali. Paragliding in Solang Valley was breathtaking. Everything from transportation to resort stays was flawless."</p>
+                <div class="review-user">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Emily Davis" class="review-avatar">
+                  <h5>Emily Davis</h5>
+                  <span>Nature Photographer (USA)</span>
+                  <div class="review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="reviews-nav reviews-nav-left" id="rev-prev"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="reviews-nav reviews-nav-right" id="rev-next"><i class="fa-solid fa-chevron-right"></i></div>
+        
+        <!-- Dot Indicators -->
+        <div class="reviews-dots" id="reviews-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Images Stack -->
+        <div class="about-img-group reveal">
+          <div class="about-img-card">
+            <img src="assets/kerala.png" alt="Travel scenery backwaters">
+          </div>
+          <div class="about-img-card">
+            <img src="assets/mysore.png" alt="Historic Palace view">
+          </div>
+          <div class="about-badge">
+            <p>12+</p>
+            <span>Years of Trust</span>
+          </div>
+        </div>
+
+        <!-- Content Details -->
+        <div class="about-content reveal">
+          <span class="section-subtitle" style="margin-bottom: 8px;">Who We Are</span>
+          <h3>Creating Memories That Last A Lifetime</h3>
+          <p>Founded with a passion for showcase India's heritage and natural beauty, "Explore India" is an award-winning tour agency. We specialized in creating custom itineraries, luxury stays, and guided explorations that connect travelers directly to local culture.</p>
+          <p>We pride ourselves on sustainable tourism practices, ensuring that our visits help preserve the archaeological monuments and local ecosystems for years to come.</p>
+          
+          <!-- Key Statistics -->
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fa-solid fa-people-group"></i></div>
+              <div class="stat-text">
+                <h4>50k+</h4>
+                <p>Happy Travelers</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div class="stat-text">
+                <h4>150+</h4>
+                <p>Unique Destinations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">We'd Love To Hear From You</h2>
+        <p class="section-desc">Have questions about destinations, custom packages, or bookings? Message us directly, and our support team will reply within 24 hours.</p>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="contact-grid">
+        
+        <!-- Details & Styled Vector Map -->
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-text">
+              <h4>Call Support</h4>
+              <p><a href="tel:+918023456789">+91 (80) 2345-6789</a></p>
+              <p><a href="tel:+919876543210">+91 98765-43210</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">
+              <h4>Email Inquiry</h4>
+              <p><a href="mailto:info@exploreindia.com">info@exploreindia.com</a></p>
+              <p><a href="mailto:support@exploreindia.com">support@exploreindia.com</a></p>
+            </div>
+          </div>
+
+          <!-- Vector Map Placeholders -->
+          <div class="map-placeholder">
+            <div class="map-vector">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Headquarters: MG Road, Bengaluru, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="contact-form-card reveal">
+          <form class="contact-form" id="contact-form" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" class="input-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" class="input-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group-full form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="input-control" placeholder="What is this about?" required>
+            </div>
+
+            <div class="form-group-full form-group">
+              <label for="contact-message">Message Details</label>
+              <textarea id="contact-message" class="input-control" placeholder="Write your message details..." required></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: About -->
+        <div class="footer-col footer-about">
+          <a href="#home" class="logo" style="margin-bottom: 20px; display: inline-block;">
+            Explore <span>India</span>
+          </a>
+          <p>Experience Indian tourism with premium guided travels, resort hotels, and custom packages designed for comfort and cultural discovery.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook Link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram Link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter Link"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube Link"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#hotels">Luxury Hotels</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Support -->
+        <div class="footer-col">
+          <h4>Support Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to our monthly newsletter and get premium vacation discounts, offers, and travel news.</p>
+          <form class="newsletter-form" id="newsletter-form" action="#" method="POST" novalidate>
+            <input type="email" id="news-email" placeholder="Email address" aria-label="Newsletter email address" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Explore India Tourism. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Site Map</a>
+          <a href="#">Safety Guides</a>
+          <a href="#">Tours Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
